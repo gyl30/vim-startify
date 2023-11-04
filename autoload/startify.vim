@@ -79,9 +79,6 @@ function! startify#insane_in_the_membrane(on_vimenter) abort
         \ noswapfile
         \ signcolumn=no
         \ synmaxcol&
-  if empty(&statusline)
-    setlocal statusline=\ startify
-  endif
 
   " Must be global so that it can be read by syntax/startify.vim.
   let g:startify_header = exists('g:startify_custom_header')
